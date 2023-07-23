@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="38dp"
+        android:textColor="#171717"
+        android:textStyle="bold"
+        android:text="Welcome" />
+
+    <TextView
+        android:id="@+id/sutc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp"
+        android:textColor="#242424"
+        android:textStyle="italic"
+        android:text="Sign Up to continue" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/purple_200"
+        app:hintTextColor="@color/purple_200"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextColor="#363636"
+            android:textStyle="italic"
+            android:hint="Enter Your Name"
+            android:id="@+id/name"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/purple_200"
+        app:hintTextColor="@color/purple_200"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:startIconDrawable="@drawable/ic_baseline_email_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextColor="#363636"
+            android:textStyle="italic"
+            android:hint="Enter Your Mail Address"
+            android:id="@+id/mail"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/purple_200"
+        app:hintTextColor="@color/purple_200"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextColor="#363636"
+            android:textStyle="italic"
+            android:hint="Enter Your Uniques ID "
+            android:id="@+id/id"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/purple_200"
+        app:hintTextColor="@color/purple_200"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextColor="#363636"
+            android:textStyle="italic"
+            android:hint="Enter Your Password"
+            android:id="@+id/password"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="2dp"
+        android:text="I agree to all the terms and conditions!!" />
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#363636"
+        android:text="SIGN UP" />
+
+
+    <TextView
+        android:id="@+id/tvsignin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:textColor="#242424"
+        android:text="SIGN IN if already registered." />
+
+</LinearLayout>
